@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>🌥️ Weather Dashboard</h1>
+
+    <div class="controls">
+      <button id="unitToggle">°C / °F</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search">
+    <input id="searchInput" placeholder="Search city (e.g. Lahore, London)" />
+    <button id="searchBtn">🔎Search</button>
+  </div>
+
+  <!-- SUGGESTIONS (READY FOR FUTURE FEATURE) -->
+  <div id="suggestions" class="suggestions"></div>
+
+  <!-- PINNED CITY -->
+  <div class="pinned">
+    📌 Pinned City: <span id="pinnedCity">None</span>
+  </div>
+
+  <!-- STATUS -->
+  <div id="alert" class="alert hidden"></div>
+  <div id="error" class="error"></div>
+  <div id="loader" class="loader hidden"></div>
+
+  <!-- WEATHER MAIN -->
+  <div id="weather" class="weather hidden">
+
+    <!-- MAIN CARD -->
+    <div class="mainCard">
+      <h2 id="city">City</h2>
+      <p id="dateTime"></p>
+
+      <h1 id="temp">--°</h1>
+      <p id="desc">Weather Condition</p>
+
+      <div class="badge" id="weatherBadge">LIVE</div>
+
+      <hr style="margin:10px 0; opacity:0.2;">
+
+      <p>Feels Like: <span id="feels">--</span></p>
+      <p>Pressure: <span id="pressure">--</span></p>
+      <p>Visibility: <span id="visibility">--</span></p>
+    </div>
+
+    <!-- SIDE CARD -->
+    <div class="sideCard">
+
+      <div>
+        💨 Wind Speed
+        <p id="wind">--</p>
+      </div>
+
+      <div>
+        💧 Humidity
+        <p id="humidity">--</p>
+      </div>
+
+      <div>
+        🌅 Sunrise
+        <p id="sunrise">--</p>
+      </div>
+
+      <div>
+        🌇 Sunset
+        <p id="sunset">--</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FORECAST -->
+  <h3 class="title">7-Day Forecast</h3>
+  <div id="forecast" class="forecast"></div>
+
+  <!-- CHART -->
+  <canvas id="chart" height="80"></canvas>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
