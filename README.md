@@ -40,7 +40,7 @@ https://open-meteo.com/
 
 ## 📸 Preview
 
-### 🌡 Celsius View📊 Weather Dashboard View
+### 📊 Weather Dashboard View
 <img width="1919" height="915" alt="Celsius Weather UI" src="https://github.com/user-attachments/assets/fc5d089b-06fb-42a1-afc3-ccc6f645e68b" />
 
 ### 🌡 Celsius View
